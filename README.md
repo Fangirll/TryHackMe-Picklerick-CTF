@@ -1,2 +1,4 @@
 # TryHackMe-PickleRick-CTF
 This is a simple, fun, and beginner CTF. This is the first CTF room that I have completed on TryHackMe. It involves finding three secret ingredients to help Rick turn back into a human after turning himself into a pickle.
+
+Here, I will highlight a quick walkthrough/step-by-step instruction for how I completed the room. Here on the README, I won't include exact commands I used in order to find the ingredients, but I will include hints to help (if you want the exact lines I used, I will create a cheatsheet with more step-by-step). As I stated before, this was my first room that I completed, so I had the help of some peers to help guide me through the processes. I did go a little overkill in this room as I tried to escalate privileges which was completely unecessary. Now, I will go forward with a walkthorugh as well as screenshots with how things should look. Good luck! 
