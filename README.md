@@ -11,7 +11,9 @@ Here, I will highlight a quick walkthrough/step-by-step instruction for how I co
 
 
 <img width="556" alt="Screen Shot 2022-11-09 at 10 41 16 PM" src="https://user-images.githubusercontent.com/117850176/201009776-cfc2b1ff-b671-412a-9027-1132ca9c1bb2.png">
+
 The first step to completing this machine is turning on the machine itself, this can be done by selecting task 1 and then pressing the green start machine button. Give this a minute and your personal IP will show up under the "active machine" heading - Keep this IP handy as you will be using this extremely frequently throughout the CTF.
+
 
 Firstly, I wanted to see what the site would look like. To do this, I just entered the given IP on a firefox (or any other web browswer of your choice) into the search bar. Then a Rick and Morty themed site appeared.
 
